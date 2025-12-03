@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+/* 1.Universal selector */
+* {
+    /* border : 1px solid red; */
+}
+/* tag selector */
+h1{
+    background-color:green;
+}
+/* id selector */
+ #a{
+    color: red;
+    background-color: yellow;
+ }
+ /* class selector . */
+ .b {
+    /* color: blue; */
+    border: 10px solid;
+ }
+ /* Group Selector . */
+
+ h1,
+ h2 {
+    color:blueviolet;
+ }
+ /* descendant selector */
+ div p {
+    color:red;
+    background: yellow;
+ }
+
+ /* child selector */
+ div > p {
+    color: green;
+    background-color: blue;
+ }
+ /* attribute selector */
+ button[type="submit"] {
+    color:red;
+    font-size: 32px;
+ }
+ /* pseudo classes */
+ li:nth-child(2) {
+    color:red;
+    font-size: 24px;
+ }
+ li:hover {
+    color:yellow;
+    background-color: red;
+    font-size: 38px;
+ }
+/* pseudo elements */
+#r1:before {
+    content: "written by css";
+}
+.b::first-letter {
+    font-size: 48px;
+    color:red;
+}
+#q {
+    display:block;
+}
+#q::first-letter {
+    font-size: 48px;
+    color: red;
+}
+#q::first-line {
+    color:yellow;
+    font-size: 12px;
+}
+#q {
+    display: block;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+/* box mode; */
+h1:nth-child(1) {
+    border: 3px solid red;
+    //padding: 30px;//
+    padding: 10px,20px,40px,60px;   /*top,bottom,right,left */
+        /* padding:20px,40px; */
+    margin: : 30px; 
+}
+</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aishwarryaa" />
+
+    <title>Assignment 1</title>
+  </head>
+
+  <body>
+    <h1>My HTML-only Website</h1>
+    <h3>Simple site built using only HTML tags - no CSS.</h3>
+
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <h2>Welcome</h2>
+    <p>
+      This page demonstrates layout and content using HTML tags. Use headings,
+      lists, tables, and forms to present information without CSS.
+    </p>
+
+    <h2>About This Page</h2>
+    <p>
+      This pages uses semantic tags : &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,
+      &lt;article&gt;, &lt;aside&gt;, and &lt;footer&gt;.
+    </p>
+
+    <h3>Key Points</h3>
+    <ol>
+      <li>Readable structure for readers and search engines</li>
+      <li>No external styles - browser default styles only</li>
+      <li>Works well for quick prototypes or content - focused pages.</li>
+    </ol>
+
+    <h2>Features(HTML)only</h2>
+    <dl>
+      <dt>Semantic layout</dt>
+      <dd>Clear structure using sectioning elements.</dd>
+    </dl>
+    <dl>
+      <dt>Accesible navigations</dt>
+      <dd>Keyboard annd screen reader friendly links and headings.</dd>
+    </dl>
+    <dl>
+      <dt>Forms and Tables</dt>
+      <dd>Collect input and show tabular data using plain HTML.</dd>
+    </dl>
+
+    <h2>Sample Data Tabel</h2>
+    <p><b>Product list</b></p>
+
+    <table border="1">
+      <tr>
+        <th>Product</th>
+        <th>Category</th>
+        <th>Price (INR)</th>
+      </tr>
+
+      <tr>
+        <td>Notebook</td>
+        <td>Stationery</td>
+        <td>50</td>
+      </tr>
+
+      <tr>
+        <td>Pen</td>
+        <td>Stationery</td>
+        <td>10</td>
+      </tr>
+
+      <tr>
+        <td>Backpack</td>
+        <td>Accessories</td>
+        <td>799</td>
+      </tr>
+    </table>
+
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="#features"> See features</a></li>
+      <li><a href="#contact"> Contact us</a></li>
+      <li><a href="#about"> More about this demo</a></li>
+    </ul>
+
+    <h2>Contacts</h2>
+        <p>If you'd like to get in touch, fill this simple form(no styling)</p>
+        <form action="">
+            <fieldset>
+                <legend>Contact form</legend>
+                <label for="Name">Name:</label><br>
+                <input type="text" id="Name" required /><br>
+                <label for="Email">Email:</label><br>
+                <input type="password" id="Email" required /><br>
+                <label for="Message">Message:</label><br>
+                <textarea id ="Message" name="Message" rows ="5" cols ="40"></textarea></textarea>
+                <p>Preferred contact:</p>
+                <lable>
+                    <input type="radio" name="contact" value="Email">Email
+                </lable><br>
+                <lable>
+                    <input type="radio" name="contact" value="Phone">Phone
+                </lable><br>
+                <button type="Done">Done</button>
+
+            </fieldset>
+        </form>
+        <p>My HTML-only Website</p>
+  </body>
+</html>
