@@ -1,0 +1,47 @@
+.flexContainer {
+  border: 1px solid red;
+  display: flex;
+  height: 90vh;
+  /*justify-content: center; */
+  /*align-items: center; */
+  /*gap: 10px;*/
+  /*flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;*/
+  /*flex-wrap: wrap;
+  align-content: wrap;*/
+}
+/* wrap values : no wrap, wrap, wrap-reverse */
+/* when we provide flex-wrap then only align content */
+
+/*values of justify content */
+/* flex-start, center, space-around, space-between, space-evenly */
+
+.flexItem {
+  background-color: yellow;
+  border: 2px solid red;
+  color: red;
+  font-size: 24px;
+  height: 100px;
+  width: 100px;
+}
+
+/*values of flex direction
+row, row-reverse, column, column-reverse */
+
+/* values of alignn items
+flex-start, flex-end, center, baseline */
+
+/* to place item at the end we have to use greater value from 0 to put in the starting we need negative value */
+/* default order of every element is 0. */
+
+.flexItem:nth-child(1) {
+  order: 1;
+  align-self: center;
+}
+
+.flexItem:nth-child(6) {
+  order: -1;
+  align-self: flex-end;
+}
+/* flexItem:nth-child has values such as flex-start, center and flex-end.*/
