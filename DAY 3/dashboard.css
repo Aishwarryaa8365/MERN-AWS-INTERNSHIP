@@ -1,0 +1,75 @@
+header {
+  grid-area: header;
+  background-color: rgb(61, 52, 187);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 50px;
+  font-size: 35px;
+}
+nav {
+  grid-area: navbar;
+  background-color: rgb(14, 24, 14);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(35, 29, 29);
+  padding: 20px;
+}
+main {
+  grid-area: main;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(220, 219, 219);
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header header"
+    "navbar main aside";
+  grid-area: body;
+}
+.item {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  display: grid;
+  display: flex;
+  border-radius: 10px;
+  margin: 10px;
+  border: 0.5px solid rgb(193, 190, 190);
+  height: 35px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.gridContainer .item {
+  border-left: 5px solid rgb(16, 4, 126);
+  font-size: 20px;
+  font-weight: 800;
+}
+.item1 {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  display: grid;
+  display: flex;
+  border-radius: 10px;
+  margin: 10px;
+  border: 0.5px solid rgb(193, 190, 190);
+  height: 35px;
+}
+.gridContainer .item1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.item2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
