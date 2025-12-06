@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Feedback Form</title>
+
+    <style>
+      body {
+        margin: ;
+        height: 100px;
+        display: flex;
+        padding: 40px;
+        background-color: white;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+
+      form {
+        width: 300px;
+        height: 120px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        flex-direction: column;
+        border-radius: 10px;
+      }
+
+      textarea {
+        height: 60px;
+        resize: none;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+    <script src="./stdFeedbackform.js" defer></script>
+  </head>
+
+  <body>
+    <h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option>HTML & CSS</option>
+        <option>JavaScript</option>
+        <option>React JS</option>
+        <option>Node JS</option>
+      </select>
+
+      <label>Rating (1 to 5):</label>
+      <input type="range" id="rating" min="1" max="5" value="3" />
+
+      <textarea
+        id="feedback"
+        placeholder="Write your feedback..."
+        required
+      ></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div id="output"></div>
+  </body>
+</html>
